@@ -60,6 +60,10 @@ h2 {
 Layout + Styling
 ************* */
 
+.container {
+    width: 100%;
+}
+
 img {
     width: 100%;
 }
@@ -130,6 +134,15 @@ main section:last-child {
     color: var(--brown_800);
 }
 
+/*
+.ingridients li::before {
+    content: "•";   
+    position: relative;
+    left: 0;
+    color: red;   
+    font-size: 2rem;
+} */
+
 .instructions li::marker {
     color: var(--brown_800);
     font-weight: 700;
@@ -194,3 +207,27 @@ tr {
     color: var(--stone_600);
 }
 
+
+
+@media (min-width: 700px) {
+    body {
+        background-color: var(--stone_100);
+    }
+
+    .container {
+        width: 600px;
+        justify-self: center;
+        padding: 2rem;
+        background-color: var(--white);
+        border-radius: 10px;
+        margin: 4rem 0rem;
+    }
+
+    .content-container {
+        margin-left: 0;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+}
